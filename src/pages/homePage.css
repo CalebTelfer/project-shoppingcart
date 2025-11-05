@@ -1,7 +1,30 @@
-ul {
-    list-style: none;
+* {
+    padding: 0;
+    margin: 0;
 }
 
 a {
     text-decoration: none;
+    color: rgb(4, 97, 66);
+    font-size: 1.5rem;
+}
+
+nav {
+    background-color: rgb(185, 127, 127);
+    height: 15vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.nav-svg {
+    height: 2em;
 }
