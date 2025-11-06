@@ -5,18 +5,18 @@
 
 a {
     text-decoration: none;
-    color: rgb(4, 97, 66);
+    color: #fab1ba;
     font-size: 1.5rem;
 }
 
 nav {
-    background-color: rgb(185, 127, 127);
+    background-color: #ebf0f3;
     height: 15vh;
 
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-}
+    justify-content: space-evenly; 
+}   
 
 ul {
     list-style: none;
@@ -27,4 +27,56 @@ ul {
 
 .nav-svg {
     height: 2em;
+}
+
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+    background-color: #d9e2e9;
+}
+
+
+.home-card {
+    background-color: #ebf0f3;
+    width: clamp(16rem, 90vw, 80rem);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.hc1 {
+    height: 60vh;
+}
+
+.hc2 {
+    height: 20vh;
+}
+
+.hc3 {
+    height: 30vh;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    gap: 1rem;
+}
+
+.seperator{
+    height: 5px;
+    background-color: #fab1ba;
+}
+
+.view-collection-button {
+    height: 3rem;
+    width: clamp(5rem, 60%, 20rem);
+    background-color: black;
+    color: #fab1ba;
+    font-weight: 900;
+    border: none;
 }
