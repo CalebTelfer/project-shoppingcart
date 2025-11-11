@@ -5,17 +5,21 @@
 
 a {
     text-decoration: none;
-    color: #fab1ba;
-    font-size: 1.5rem;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 500;
 }
 
 nav {
-    background-color: #ebf0f3;
+    background-color: #0e8ed9;
     height: 15vh;
 
     display: flex;
     align-items: center;
     justify-content: space-evenly; 
+
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 15px;
 }   
 
 ul {
@@ -24,11 +28,6 @@ ul {
     justify-content: center;
     gap: 1rem;
 }
-
-.nav-svg {
-    height: 2em;
-}
-
 
 .card-container {
     display: flex;
