@@ -1,3 +1,5 @@
+import test from "../assets/test.png"
+
 function Homepage() {
     return (
         <>
@@ -13,24 +15,24 @@ function Homepage() {
 
                     <div className="seperator"></div>
 
-                    <img src="" alt="" />
+                    <img className="product-img" src={test} alt="" />
                 </div>
 
                 <div className="home-card hc2">
-                    <div>
-                        <img src="" alt="" />
+                    <div className="flex-cen">
+                        <img className="horizontal-product-img" src={test} alt="" />
                         <div className="card-text">
-                            <h3>Placeholder product name</h3>   
+                            <h4>Placeholder product name</h4>   
                             <h2>$345</h2>
                         </div>
                     </div>
                 </div>
 
                 <div className="home-card hc3">
-                    <div>
-                        <img src="" alt="" />
+                    <div className="flex-cen">
+                        <img className="horizontal-product-img" src={test} alt="" />
                         <div className="card-text">
-                            <h3>Placeholder product name</h3>   
+                            <h4>Placeholder product name</h4>   
                             <h2>$345</h2>
                         </div>
                     </div>

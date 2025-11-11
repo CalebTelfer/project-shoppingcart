@@ -47,18 +47,6 @@ ul {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.hc1 {
-    height: 60vh;
-}
-
-.hc2 {
-    height: 20vh;
-}
-
-.hc3 {
-    height: 30vh;
-}
-
 .card-text {
     display: flex;
     flex-direction: column;
@@ -68,8 +56,9 @@ ul {
 }
 
 .seperator{
-    height: 5px;
+    height: 3px;
     background-color: #fab1ba;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .view-collection-button {
@@ -79,4 +68,20 @@ ul {
     color: #fab1ba;
     font-weight: 900;
     border: none;
+}
+
+.product-img {
+    display: flex;
+    max-width: 80%;
+    align-self: center;
+    justify-self: center;
+    padding: 1rem;
+}
+
+.horizontal-product-img {
+    display: flex;
+    max-width: 35%;
+    padding: 1rem;
+    align-self: center;
+    justify-self: center;
 }
