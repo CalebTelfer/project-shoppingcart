@@ -41,3 +41,19 @@ p {
     display: flex;
     flex-direction: column;
 }
+
+.gap1 {
+    gap: 1rem;
+}
+
+.margin1 {
+    margin: 1rem;
+}
+
+.white-text {
+    color: white;
+}
+
+.pointer {
+    cursor: pointer;
+}

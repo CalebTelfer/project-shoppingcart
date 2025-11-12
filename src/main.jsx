@@ -4,6 +4,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router'
 import './index.css'
 import App from './App.jsx'
 import ErrorPage from './pages/errorPage.jsx'
+import ShopPage from './pages/shopPage.jsx'
+import CartPage from './pages/cartPage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -14,6 +16,14 @@ const router = createBrowserRouter([
   {
     path: "profile",
     element: <App />,
+  },
+  {
+    path: "shop",
+    element: <ShopPage />,
+  },
+  {
+    path: "cart",
+    element: <CartPage />,
   },
 ]);
 

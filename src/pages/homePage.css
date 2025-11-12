@@ -84,3 +84,13 @@ ul {
     align-self: center;
     justify-self: center;
 }
+
+.footer-div {
+    background-color: #0e8ed9;
+}
+
+.endfooter-style {
+    background-color: rgb(33, 33, 33);
+
+    height: 50px;
+}

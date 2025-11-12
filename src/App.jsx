@@ -3,6 +3,7 @@ import './App.css'
 import './utility.css'
 import Navbar from './components/Navbar';
 import Homepage from './pages/homePage';
+import FooterContent from './components/FooterContent';
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
     <>
     <Navbar />
     <Homepage />
+    <FooterContent />
     </>
   );
 }
