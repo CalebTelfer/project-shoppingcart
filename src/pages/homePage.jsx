@@ -1,6 +1,9 @@
 import test from "../assets/test.png"
+import { useOutletContext } from "react-router";
 
 function Homepage() {
+    const { items } = useOutletContext();
+    
     return (
         <>
             <div className="card-container">
@@ -15,25 +18,25 @@ function Homepage() {
 
                     <div className="seperator"></div>
 
-                    <img className="product-img" src={test} alt="" />
+                    <img className="product-img" src={items[14].image} alt="" />
                 </div>
 
                 <div className="home-card hc2">
                     <div className="flex-cen">
-                        <img className="horizontal-product-img" src={test} alt="" />
+                        <img className="horizontal-product-img" src={items[7].image} alt="" />
                         <div className="card-text">
-                            <h4>Placeholder product name</h4>   
-                            <h2>$345</h2>
+                            <h4>{items[7].title}</h4>   
+                            <h2>${items[7].price}</h2>
                         </div>
                     </div>
                 </div>
 
                 <div className="home-card hc3">
                     <div className="flex-cen">
-                        <img className="horizontal-product-img" src={test} alt="" />
+                        <img className="horizontal-product-img" src={items[15].image} alt="" />
                         <div className="card-text">
-                            <h4>Placeholder product name</h4>   
-                            <h2>$345</h2>
+                            <h4>{items[15].title}</h4>   
+                            <h2>${items[15].price}</h2>
                         </div>
                     </div>
                 </div>

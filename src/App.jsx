@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Outlet />
+      <Outlet context={{items}}/>
       <FooterContent />
     </>
   );
