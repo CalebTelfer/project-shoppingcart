@@ -1,4 +1,3 @@
-import test from "../assets/test.png"
 import { useOutletContext } from "react-router";
 
 function Homepage() {
