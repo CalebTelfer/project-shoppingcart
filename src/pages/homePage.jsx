@@ -21,7 +21,7 @@ function Homepage() {
 
                     <div className="seperator"></div>
 
-                    <img className="product-img" src={items[14].image} alt="" />
+                    <img className="home-product-img" src={items[14].image} alt="" />
                 </div>
 
                 <div className="home-card hc2">

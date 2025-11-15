@@ -50,6 +50,11 @@ p {
     margin: 1rem;
 }
 
+.margintb1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 .white-text {
     color: white;
 }
