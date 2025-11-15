@@ -2,6 +2,10 @@ import { useOutletContext } from "react-router";
 
 function Homepage() {
     const { items } = useOutletContext();
+
+    if (!items || items.length < 19) {
+        return <div>Loading...</div>;
+    }
     
     return (
         <>
