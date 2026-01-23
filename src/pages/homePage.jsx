@@ -1,7 +1,10 @@
 import { useOutletContext } from "react-router";
+import { useState } from "react";
 
 function Homepage() {
     const { items } = useOutletContext();
+
+    const [cartItems, setCartItems] = useState([]);
 
     if (!items || items.length < 19) {
         return <div>Loading...</div>;
