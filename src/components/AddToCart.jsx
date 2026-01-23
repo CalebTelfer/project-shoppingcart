@@ -10,7 +10,7 @@ function AddToCart({ item }) {
   return (
     <>
         <div>
-            <label for="quantity">Choose a pet:</label>
+            <label for="quantity"></label>
 
             <select name="quantity-select" id="quantity" onChange={(e) => setQuantity(Number(e.target.value))}>
             <option value="1">1</option>

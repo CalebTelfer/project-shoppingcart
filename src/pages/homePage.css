@@ -69,6 +69,13 @@ ul {
     border: none;
 }
 
+.view-collection-button > a {
+    color: #fab1ba;
+    font-weight: 900;
+    font-size: 120%;
+    border: none;
+}
+
 .home-product-img {
     display: flex;
     max-width: 80%;

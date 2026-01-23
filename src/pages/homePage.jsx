@@ -1,5 +1,6 @@
 import { useOutletContext } from "react-router";
 import { useState } from "react";
+import { Link } from "react-router";
 
 function Homepage() {
     const { items } = useOutletContext();
@@ -18,7 +19,7 @@ function Homepage() {
                         <h2>Keep it sporty.</h2>
                         <h4>Our mission is to change the world through sport. Browse Sportwear and shoes.</h4>
                         <div className="flex-cen">
-                            <button className="view-collection-button">View Collection</button>
+                            <button className="view-collection-button" ><Link to="/Shop">View Collection</Link></button>
                         </div>
                     </div>
 
@@ -33,6 +34,7 @@ function Homepage() {
                         <div className="card-text">
                             <h4>{items[7].title}</h4>   
                             <h2>${items[7].price}</h2>
+                            <button className="view-collection-button"><Link to="/Shop">View Collection</Link></button>
                         </div>
                     </div>
                 </div>
@@ -43,6 +45,7 @@ function Homepage() {
                         <div className="card-text">
                             <h4>{items[15].title}</h4>   
                             <h2>${items[15].price}</h2>
+                            <button className="view-collection-button"><Link to="/Shop">View Collection</Link></button>
                         </div>
                     </div>
                 </div>
