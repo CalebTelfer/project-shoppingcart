@@ -3,6 +3,10 @@
     margin: 3rem;
 }
 
+.product-info {
+    max-width: 60%;
+}
+
 @media (max-width: 800px) {
     .product {
         flex-direction: column;
