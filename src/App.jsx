@@ -9,6 +9,7 @@ import { Outlet } from 'react-router';
 function App() {
 
   const [items, setItems] = useState([]);
+  const [cartData, setCartData] = useState([]);
 
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")
@@ -17,10 +18,15 @@ function App() {
     .catch((error) => console.log(error));
   }, []);
 
+  const addToCart = (item, quantity) => {
+
+  };
+
+
   return (
     <>
       <Navbar />
-      <Outlet context={{items}}/>
+      <Outlet context={{items, cartData, addToCart}}/>
       <FooterContent />
     </>
   );

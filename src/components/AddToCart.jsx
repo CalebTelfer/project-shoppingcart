@@ -1,10 +1,13 @@
 import { useState } from "react";
+import { useOutletContext } from "react-router";
 
 function AddToCart({ item }) {
+    const { cart, addToCart } = useOutletContext();
+
     const [quantity, setQuantity] = useState(0);
 
     function handleAddToCart() {
-        //add to cart quantity + item
+        addToCart(item, quantity);
     }
 
   return (
