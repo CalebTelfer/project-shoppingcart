@@ -62,3 +62,7 @@ p {
 .pointer {
     cursor: pointer;
 }
+
+.margin-left-min1 {
+    margin-left: -1rem;
+}

@@ -28,7 +28,7 @@ function ShopPage() {
                         <p>{items[0].description}</p>
                     </div>
 
-                    <AddToCart/>
+                    <AddToCart item={items[0]}/>
                 </div>
 
             </div>
@@ -47,8 +47,8 @@ function ShopPage() {
                     <div>
                         <p>{items[11].description}</p>
                     </div>
-                    
-                    <AddToCart/>
+
+                    <AddToCart item={items[11]}/>
                 </div>
 
             </div>
