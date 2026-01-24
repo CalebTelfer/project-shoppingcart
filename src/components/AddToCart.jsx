@@ -9,7 +9,7 @@ function AddToCart({ item }) {
 
   return (
     <>
-        <div>
+        <div className="flex gap1">
             <label for="quantity"></label>
 
             <select name="quantity-select" id="quantity" onChange={(e) => setQuantity(Number(e.target.value))}>

@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import FooterContent from "../components/FooterContent";
 import { useOutletContext } from "react-router";
 import "./shopPage.css";
+import AddToCart from "../components/AddToCart";
 
 function ShopPage() {
     const { items } = useOutletContext();
@@ -26,6 +27,8 @@ function ShopPage() {
                     <div>
                         <p>{items[0].description}</p>
                     </div>
+
+                    <AddToCart/>
                 </div>
 
             </div>
@@ -44,6 +47,8 @@ function ShopPage() {
                     <div>
                         <p>{items[11].description}</p>
                     </div>
+                    
+                    <AddToCart/>
                 </div>
 
             </div>
