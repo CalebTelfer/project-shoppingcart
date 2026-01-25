@@ -46,6 +46,10 @@ p {
     gap: 1rem;
 }
 
+.gap5 {
+    gap: 5rem;
+}
+
 .margin1 {
     margin: 1rem;
 }
