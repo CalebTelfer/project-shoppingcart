@@ -10,6 +10,7 @@ function App() {
 
   const [items, setItems] = useState([]);
   const [cartData, setCartData] = useState([]);
+  const [cartQuantity, setCartQuantity] = useState(0);
 
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")
@@ -19,14 +20,15 @@ function App() {
   }, []);
 
   const addToCart = (item, quantity) => {
-
+    setCartData(prevItems => [...prevItems, [item, quantity]]);
+    setCartQuantity(cartQuantity + quantity);
   };
 
 
   return (
     <>
-      <Navbar />
-      <Outlet context={{items, cartData, addToCart}}/>
+      <Navbar cartQuantity={cartQuantity} />
+      <Outlet context={{items, cartData, addToCart, cartQuantity}}/>
       <FooterContent />
     </>
   );

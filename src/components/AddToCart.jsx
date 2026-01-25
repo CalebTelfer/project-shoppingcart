@@ -4,7 +4,7 @@ import { useOutletContext } from "react-router";
 function AddToCart({ item }) {
     const { cart, addToCart } = useOutletContext();
 
-    const [quantity, setQuantity] = useState(0);
+    const [quantity, setQuantity] = useState(1);
 
     function handleAddToCart() {
         addToCart(item, quantity);
