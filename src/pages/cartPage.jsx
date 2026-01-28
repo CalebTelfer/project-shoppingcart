@@ -4,7 +4,6 @@ import './cartPage.css';
 function CartPage() {
     const { cartData, cartQuantity, cartPrice} = useOutletContext();
     
-console.log(cartData);
     return (
         <>
             <div className="cartbgdiv">
