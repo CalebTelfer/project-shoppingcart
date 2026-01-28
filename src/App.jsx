@@ -21,7 +21,27 @@ function App() {
   }, []);
 
   const addToCart = (item, quantity) => {
-    setCartData(prevItems => [...prevItems, [item, quantity]]);
+
+    const index = cartData.findIndex(
+      ([itemName]) => itemName == item
+    );
+
+    if (index == -1) { // item not in cart yet
+      setCartData(prevItems => [...prevItems, [item, quantity]]);
+      
+    } else {
+      setCartData( prevItems =>  //item in cart, just update quantity.
+
+        prevItems.map((cartItem, i) => {
+          if (i == index) {
+            return [cartItem[0], cartItem[1] + quantity];
+          }
+
+          return cartItem;
+        })
+      )
+    }
+
     setCartQuantity(cartQuantity + quantity);
     setCartPrice(cartPrice + (item.price * quantity));
   };
